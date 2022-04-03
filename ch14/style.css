@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url('//fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+* {font-family:"Nanum Gothic","맑은 고딕",gulim;}
+body {width:700px; margin:0 auto; font-size:10pt;}
+a {text-decoration:none; color:black;}
+h1, h2, h3, #main-title {text-align:center; clear:both;}
+ol, ul {list-style:none;}
+div {display:block;}
+img {width:100%;}
+nav {background-color:#ABC6DD; margin:10px 0;}
+nav span {display:inline-block; padding:10px;}
+table {margin:0 auto; border:1px solid #ddd;}
+.active {font-weight:bold; text-decoration:underline;}
+.input-text {width:200px;}
+.form-button {width:80px;}
+.form-photo {width:150px; overflow:hidden; margin-left:5px;}
+.form-label {background-color:#ddd; width:100px; padding:5px 0 5px 10px;}
+.form-data {width:500px;}
+.mlist-no {width:80px; text-align:center;}
+.mlist-userid {width:100px; text-align:left;}
+.mlist-username {width:120px; text-align:left;}
+.mlist-email {width:180px; text-align:left;}
+.mlist-phone {width:130px; text-align:left;}
+.mlist-photo {width:100px; text-align:center;}
+.mlist-action {width:150px; text-align:center;}
+#mlist-table {border-collapse:collapse;}
+#mlist-table thead tr {background-color:#ABC6DD;}
+#mlist-table td, #mlist-table th {padding:5px;}
+#mlist-table tbody tr:nth-child(even) {background-color:#ddd;}

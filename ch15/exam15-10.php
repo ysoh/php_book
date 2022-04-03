@@ -1,0 +1,26 @@
+<?php
+	
+	// MySQL 서버 연결 및 데이터베이스 선택
+    $mysqli = new mysqli("localhost", "dbuser", "dbpass", "webdb_book");
+	if (!$link) { // DB연결에 실패한 경우
+		echo "DB 연결에 실패했습니다.<br>";
+		exit();   // 프로그램 종료
+	}
+	
+	$char = $mysqli->set_charset("utf8"); // DB 문자셋 설정
+	if (!$char) { // 문자셋 설정에 실패한 경우
+		echo "UTF-8 문자셋을 설정하지 못했습니다.<br>";
+		exit();   // 프로그램 종료
+	}
+	
+	$sql = "DELETE FROM `book_members` WHERE `userid`='{$_GET["userid"]}'";
+	echo "$sql<br>";
+	
+	$result = $mysqli->query($sql); // SQL 실행
+	if (!$result) { // SQL에 오류가 있는 경우
+		echo "SQL에 오류가 있습니다.<br>";
+		exit();     // 프로그램 종료
+	}
+	
+	$mysqli->close(); // MySQL 연결 종료
+?>
