@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        define(COMPANY, "현대");
+        define("COMPANY", "현대");
         echo COMPANY;  // 현대 출력
         echo "<br>";
         define("VOLTAGE", 220);
