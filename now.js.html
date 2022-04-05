@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Now</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        const d = new Date();
+        const str = d.getFullYear() + "년" + (d.getMonth() + 1) + "월" + d.getDate() + "일 " + d.getHours() + "시" + d.getMinutes() + "분" + d.getSeconds() + "초"
+        document.getElementById("demo").innerHTML = str;
+    </script>
+</body>
+
+</html>
